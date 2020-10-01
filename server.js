@@ -79,6 +79,6 @@ app.get("*", async (req, res) => {
 })
 
 // listen for requests :)
-const listener = app.listen(1000, function () {
+const listener = app.listen(3000, function () {
   console.log("Your app is listening on port " + listener.address().port);
 });
