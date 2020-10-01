@@ -1,170 +1,169 @@
+
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <title>Discord Labs</title>
-      
-      <link rel="apple-touch-icon" sizes="180x180" href="//cdn.discordlabs.org/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="//cdn.discordlabs.org/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="//cdn.discordlabs.org/favicon-16x16.png">
-      <link rel="manifest" href="//cdn.discordlabs.org/site.webmanifest">
-      <link rel="mask-icon" href="//cdn.discordlabs.org/safari-pinned-tab.svg" color="#5bbad5">
-      
-      <meta name='dmca-site-verification' content='cjh0U2FKYWNCWDBwQlo2WTdmQkE0UT090' />
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="mobile-web-app-capable" content="yes">
-      <meta name="theme-color" content="#7289DA">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="identifier-url" content="https://discordlabs.org">
-      <meta name="keywords" content="discordlabs,discordbotlabs,discord labs, discord bot labs,discord, discord bot list, bot, bot list, bots, discord bots, botcord, bot lists, discord botcord, best discord botlist, best discord bot list">
-      <meta name="language"  content="EN">
-      <meta name="copyright" content="@2020 discordlabs.org">
-
-      <meta name="description" content="Creating the next generation of Discord sites and tools.">
-
-      <meta name="twitter:card" value="summary">
-      <meta name="twitter:title" content="Discord Labs">
-      <meta name="twitter:description" content="Creating the next generation of Discord sites and tools.">
-
-      <meta property="og:title" content="Discord Labs" />
-      <meta property="og:url" content="https://discordlabs.org" />
-      <meta property="og:description" content="Creating the next generation of Discord sites and tools."> 
-      <meta property="og:image" content="https://cdn.discordlabs.org/logo200.png" />
-      <meta property="og:site_name" value="Discord Labs">
-      <link rel="stylesheet" href="/home/style.css" />
-      <link rel="stylesheet" href="//usercord.org/main/style.css" />
-      
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-
-      
-    </head>  
+<html lang="en">
+  <head>
+    <title>Discord Labs</title>
     
+    <link rel="icon" type="image/png" sizes="32x32" href="//cdn.discordlabs.org/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="//cdn.discordlabs.org/favicon-16x16.png">
+    <link rel="mask-icon" href="//cdn.discordlabs.org/safari-pinned-tab.svg" color="#5bbad5">
+    <!--pls work-->
+    <meta name='dmca-site-verification' content='cjh0U2FKYWNCWDBwQlo2WTdmQkE0UT090' />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#7289DA">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="identifier-url" content="https://discordlabs.org">
+    <meta name="keywords" content="discordlabs,discordbotlabs,discord labs, discord bot labs,discord, discord bot list, bot, bot list, bots, discord bots, botcord, bot lists, discord botcord, best discord botlist, best discord bot list">
+    <meta name="language"  content="EN">
+    <meta name="copyright" content="@2020 discordlabs.org">
+
+    <meta name="description" content="Creating the next generation of Discord sites and tools.">
+
+    <meta name="twitter:card" value="summary">
+    <meta name="twitter:title" content="Discord Labs">
+    <meta name="twitter:description" content="Creating the next generation of Discord sites and tools.">
+
+    <meta property="og:title" content="Discord Labs" />
+    <meta property="og:url" content="https://discordlabs.org" />
+    <meta property="og:description" content="Creating the next generation of Discord sites and tools."> 
+    <meta property="og:image" content="https://cdn.discordlabs.org/logo200.png" />
+    <meta property="og:site_name" value="Discord Labs">
+    <link rel="stylesheet" href="/home/style.css" />
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
+
+  </head>  
+  
 
 
 
-   <body style="background-color:#2C2F33 !important;color:white;font-family: 'Rubik', sans-serif;">
+ <body style="background-color:#2C2F33 !important;color:white;font-family: 'Rubik', sans-serif;">
 
-  <!-- Navigation -->
- <%- include("../extras/navbar",{page:"home"}) %>  
- 
-  <!-- Header -->
-  <header class="bg-dark py-5 mb-5" style="background-color:#23272A!important;">
-            <% var msg = ac.array()
-        ac.forEach((msg, i) => { 
-          
-          if(i < 2) return; %>
-      <div aria-live="polite" aria-atomic="true" role="alert" style="position: relative;">
-        <div class="toast" style="position: absolute; top: 30px; right: 0; z-index: 1" data-delay="10000">
-          <div class="toast-header">
-            <img src="<%=msg.author.displayAvatarURL%>?size=64" style="border-radius:50%;width:64px;height:64px;" class="rounded mr-2" alt="...">
-            <strong class="mr-auto"><%=msg.author.tag%></strong>
-            <small><%= msg.createdAt.toDateString() %> </small>
-            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="toast-body" style="color:black;">
-            <%- md.render(msg.cleanContent) %>
-          </div>
-          <% if(msg.attachments.array()[0]) { %>
-          <div class="toast-header container">
-            <img src="<%= msg.attachments.array()[0].url %>">
-          </div>
-          <% } %>
-          <div class="toast-header">
-            Discord Labs Announcement
-          </div>
+<!-- Navigation -->
+<%- include("../extras/navbar",{page:"home"}) %>  
+
+<!-- Header -->
+<header class="bg-dark py-5 mb-5" style="background-color:#23272A!important;">
+          <% 
+      ac.forEach((msg) => { %>
+    <div aria-live="polite" aria-atomic="true" role="alert" style="position: relative;">
+      <div class="toast" style="position: absolute; top: 30px; right: 0; z-index: 1" data-delay="10000">
+        <div class="toast-header">
+          <img src="<%=msg.author.displayAvatarURL%>?size=64" style="border-radius:50%;width:64px;height:64px;" class="rounded mr-2" alt="...">
+          <strong class="mr-auto"><%=msg.author.tag%></strong>
+          <small><%= msg.createdAt.toDateString() %> </small>
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-      </div>
-      <% })%>   
-    <div class="container h-100">
-      <div class="row h-100 align-items-center">
-        <div class="col-lg-12">
-          <h1 class="display-4 text-white mt-5 mb-2">Discord Labs</h1>
-          <p class="lead mb-5 text-white-50">Creating the next generation of Discord sites and tools.</p>
+        <div class="toast-body" style="color:black;">
+          <%- md.render(msg.cleanContent) %>
         </div>
-      </div>
-    </div>
-
-  </header>
-
-  <!-- Page Content -->
-  <div class="container" id="services">
-
-    <div class="row" >
-      <div class="col-md-8 mb-5">
-        <h2>What We Do</h2>
-        <hr style="border-color:white;">
-        <p>At Discord Labs, we strive to make your Discord experience as great as possible, and our Next Generation initiative is the way we do it. 
-          We have a wide range of products in services ranging from <a href="//statcord.com" target="_blank" class="ilink">Growing your Discord Bot</a> to 
-          <a href="//usercord.org" target="_blank" class="ilink">Unlocking the full potential of your Discord Profile.</a> 
-         
-      </div>
-      <div class="col-md-4 mb-5">
-        <h2>Contact Us</h2>
-        <hr style="border-color:white;">
-        <address>
-          <a href="mailto:support@discordlabs.org" class="ulink"><i class="fas fa-envelope"></i> support@discordlabs.org</a>
-        </address>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4 mb-5">
-        <div class="card h-100" style="border: 4px solid #e2a52d;background-color:#23272A !important;">
-          <img class="card-img-top" src="//cdn.discordlabs.org/logo200.png" alt="">
-          <div class="card-body">
-            <h4 class="card-title" style="text-align:center;">Discord Bot Labs</h4>
-            <p class="card-text">A great way to find amazing Discord bots for your Discord server. Also a great way to grow your Discord bot.</p>
-          </div>
-          <div class="card-footer" style="text-align:center;border-color:white;">
-            <a href="//bots.discordlabs.org" class="btn btn-primary btn-lg">Visit Discord Bot Labs</a>
-          </div>
+        <% if(msg.attachments.array()[0]) { %>
+        <div class="toast-header container">
+          <img src="<%= msg.attachments.array()[0].url %>">
         </div>
-      </div>
-      <div class="col-md-4 mb-5">
-        <div class="card h-100" style="border: 4px solid #04c05a;background-color:#23272A !important;">
-          <img class="card-img-top" src="//cdn.usercord.org/logo200.png" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Usercord</h4>
-            <p class="card-text">Your Discord profile has potential. Unlock it with Usercord.</p>
-          </div>
-          <div class="card-footer" style="text-align:center;border-color:white;">
-            <a href="//usercord.org" class="btn btn-primary btn-lg">Visit Usercord</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-5">
-        <div class="card h-100"  style="border: 4px solid #2582a4;background-color:#23272A !important;">
-          <img class="card-img-top" src="//cdn.statcord.com/logo200.png" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Statcord</h4>
-            <p class="card-text">The #1 way track your Discord bots growth.</p>
-          </div>
-          <div class="card-footer" style="text-align:center;border-color:white;">
-            <a href="//statcord.com" class="btn btn-primary btn-lg">Visit Statcord</a>
-          </div>
+        <% } %>
+        <div class="toast-header">
+          Discord Labs Announcement
         </div>
       </div>
     </div>
-    <!-- /.row -->
-
+    <% })%>   
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-lg-12">
+        <h1 class="display-4 text-white mt-5 mb-2">Discord Labs</h1>
+        <p class="lead mb-5 text-white-50">Creating the next generation of Discord sites and tools.</p>
+      </div>
+    </div>
   </div>
-  <!-- /.container -->
-  <%- include("../extras/footer") %>  
-    
-  <script>$(".toast").toast('show')</script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
-     
-       <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-  new Crate({
-    server: '608711879858192479',
-    channel: '672168369130045440',
-    shard: 'https://e.widgetbot.io'
-  })
-    
+
+</header>
+
+<!-- Page Content -->
+<div class="container" id="services">
+
+  <div class="row" >
+    <div class="col-md-8 mb-5">
+      <h2>What We Do</h2>
+      <hr style="border-color:white;">
+      <p>At Discord Labs, we strive to make your Discord experience as great as possible, and our Next Generation initiative is the way we do it. 
+        We have a wide range of products in services ranging from <a href="//statcord.com" target="_blank" class="ilink">Growing your Discord Bot</a> to 
+        <a href="//bots.discordlabs.org" target="_blank" class="ilink">advertising it to other users.</a> 
+       
+    </div>
+    <div class="col-md-4 mb-5">
+      <h2>Contact Us</h2>
+      <hr style="border-color:white;">
+      <address>
+        <a href="mailto:support@discordlabs.org" class="ulink"><i class="fas fa-envelope"></i> support@discordlabs.org</a>
+      </address>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-4 mb-5">
+      <div class="card h-100" style="border: 4px solid #e2a52d;background-color:#23272A !important;">
+        <img class="card-img-top" src="//cdn.discordlabs.org/logo200.png" alt="">
+        <div class="card-body">
+          <h4 class="card-title" style="text-align:center;">Discord Bot Labs</h4>
+          <p class="card-text">A great way to find amazing Discord bots for your Discord server. Also a great way to grow your Discord bot.</p>
+        </div>
+        <div class="card-footer" style="text-align:center;border-color:white;">
+          <a href="//bots.discordlabs.org" class="btn btn-primary btn-lg">Visit Discord Bot Labs</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-5">
+      <div class="card h-100"  style="border: 4px solid #2582a4;background-color:#23272A !important;">
+        <img class="card-img-top" src="//cdn.statcord.com/logo200.png" alt="">
+        <div class="card-body">
+          <h4 class="card-title">Statcord</h4>
+          <p class="card-text">The #1 way track your Discord bots growth.</p>
+        </div>
+        <div class="card-footer" style="text-align:center;border-color:white;">
+          <a href="//statcord.com" class="btn btn-primary btn-lg">Visit Statcord</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5">
+      <div class="card h-100" style="border: 4px solid #04c05a;background-color:#23272A !important;">
+        <img class="card-img-top" src="//cdn.discordlabs.org/logo200.png" alt="">
+        <div class="card-body">
+          <h4 class="card-title">Discord Widgets</h4>
+          <p class="card-text">Coming Soon</p>
+        </div>
+        <div class="card-footer" style="text-align:center;border-color:white;">
+          <a class="btn btn-primary btn-lg">Coming Soon</a>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+</div>
+
+<!-- /.container -->
+<%- include("../extras/footer") %>  
+  
+<script>$(".toast").toast('show')</script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
+   
+     <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+new Crate({
+  server: '608711879858192479',
+  channel: '672168369130045440',
+  shard: 'https://e.widgetbot.io'
+})
+  
 </script>
 
 </body>   
-     
-  </html>
+   
+</html>

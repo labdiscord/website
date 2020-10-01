@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Maven+Pro&display=swap');
 
 /* Footer Styling */
-
+/* DOGE WAS HERE */
 .footer-dark {
     padding: 50px 0;
     color: #f0f9ff;
@@ -55,5 +55,31 @@
 }
 decorations:none;
 }
+.h4{
+    color:white!important;
+}
+.h4 b{
+    color:white!important;
+}
 
+.adsmall{
+  display: none;
+}
 
+@media only screen and (max-width: 1500px) {
+  .bigbigad {
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .adbig {
+    display:none;
+    visibility:none;
+    width: 0; height: 0;
+    opacity: 0;
+  }
+  .adsmall { 
+    display: block;
+  }
+}
