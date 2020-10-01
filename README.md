@@ -1,5 +1,6 @@
 # Discord Labs V2
-Source code for the official Discord Labs website. [discordlabs.org](https://discordlabs.org) **This code does not power [bots.discordlabs.org](https://bots.discordlabs.org)**.
+Source code for the official Discord Labs website. [discordlabs.org](https://discordlabs.org) <br />
+**This code does not power [bots.discordlabs.org](https://bots.discordlabs.org)**.
 
 ## Config
 You should set your `Discord Token` in the `server.js` file.
