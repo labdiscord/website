@@ -1,83 +1,84 @@
 <style>
-.dropdown-item{
-  background-color:#2C2F33 !important;
-  color:white !important;
-  font-family: 'Rubik', sans-serif;
-}
-.dropdown-item:hover{
-  background-color:#23272A !important;
-  color:white !important;
-  font-family: 'Rubik', sans-serif;
-}
-.privacy{
-  width: 80vw;
-  margin: 0vw 9vw 2vw 9vw;
-  display: inline-block;
-  font-family: 'Maven Pro', sans-serif;
-}
-.ulink{
-  color:#7289DA;
-  text-decoration:none;
-}
-.ulink:hover{
-  color:white;
-  text-decoration:none;
-}
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #2C2F33;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #414A4C;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-</style> 
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color:#23272A!important;">
-    <div class="container">
-      <a class="navbar-brand" href="/"><img src="//cdn.discordlabs.org/logo50.png" width=50px height=50px></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item <%if(page=='home'){%>active<%}%>">
-            <a class="nav-link" href="/">Home
+  .dropdown-item{
+    background-color:#2C2F33 !important;
+    color:white !important;
+    font-family: 'Rubik', sans-serif;
+  }
+  .dropdown-item:hover{
+    background-color:#23272A !important;
+    color:white !important;
+    font-family: 'Rubik', sans-serif;
+  }
+  .privacy{
+    width: 80vw;
+    margin: 0vw 9vw 2vw 9vw;
+    display: inline-block;
+    font-family: 'Maven Pro', sans-serif;
+  }
+  .ulink{
+    color:#7289DA;
+    text-decoration:none;
+  }
+  .ulink:hover{
+    color:white;
+    text-decoration:none;
+  }
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #2C2F33;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #414A4C;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  </style> 
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color:#23272A!important;">
+      <div class="container">
+        <a class="navbar-brand" href="/"><img src="//cdn.discordlabs.org/logo50.png" width=50px height=50px></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item <%if(page=='home'){%>active<%}%>">
+              <a class="nav-link" href="/">Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#services">Services</a>
+            </li>
+            <li class="nav-item <%if(page=='partners'){%>active<%}%>">
+              <a class="nav-link" href="/partners">Partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="//status.discordlabs.org">Service Status</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              More
             </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#2C2F33 !important;color:white;font-family: 'Rubik', sans-serif;">
+              <a class="dropdown-item" href="/tos">TOS</a>
+              <a class="dropdown-item" href="/privacy">Privacy</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="mailto:support@discordlabs.org">Contact Us</a>
+            </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-          <li class="nav-item <%if(page=='partners'){%>active<%}%>">
-            <a class="nav-link" href="/partners">Partners</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="//status.discordlabs.org">Service Status</a>
-          </li>
-          <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            More
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#2C2F33 !important;color:white;font-family: 'Rubik', sans-serif;">
-            <a class="dropdown-item" href="/tos">TOS</a>
-            <a class="dropdown-item" href="/privacy">Privacy</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="mailto:support@discordlabs.org">Contact Us</a>
-          </div>
-        </li>
-          
-        </ul>
+            
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  

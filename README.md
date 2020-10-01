@@ -1,13 +1,14 @@
 # Discord Labs V2
-Source code for the official Discord Labs website. [discordlabs.org](https://discordlabs.org) **This code does not power [bots.discordlabs.org](https://bots.discordlabs.org)**.
+Source code for the official Discord Labs website. [discordlabs.org](https://discordlabs.org) <br />
+**This code does not power [bots.discordlabs.org](https://bots.discordlabs.org)**.
 
 ## Config
-You should set your `Discord Token` and an `Announcement Channel ID` in the `server.js` file.
+You should set your `Discord Token` in the `server.js` file.
 
 ## Navigating the project tree
-`views` - Source code for the fontend.
-`public/` - Static files.
-`server.js` - These run on every HTTP request you make.
+`views` - Source code for the fontend.  <br />
+`public/` - Static files. <br />
+`server.js` - These run on every HTTP request you make. <br />
 
 ## Setup
 ```shell

@@ -1,42 +1,446 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#7289DA">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Page Not Found | Discord Labs</title>      
+    <link rel="icon" type="image/png" sizes="32x32" href="//cdn.discordlabs.org/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="//cdn.discordlabs.org/favicon-16x16.png">
+    <link rel="mask-icon" href="//cdn.discordlabs.org/safari-pinned-tab.svg" color="#5bbad5">
 
-	<title>404 Error | Discord Labs</title>
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="//cdn.discordlabs.org/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="//cdn.discordlabs.org/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="//cdn.discordlabs.org/favicon-16x16.png">
-  <link rel="manifest" href="//cdn.discordlabs.org/site.webmanifest">
-  <link rel="mask-icon" href="//cdn.discordlabs.org/safari-pinned-tab.svg" color="#5bbad5">
-      
-	<!-- Google font -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:700,900" rel="stylesheet">
+    <meta name="identifier-url" content="https://discordlabs.org">
+    <meta name="keywords" content="discordlabs,discordbotlabs,discord labs, discord bot labs,discord, discord bot list, bot, bot list, bots, discord bots, botcord, bot lists, discord botcord, best discord botlist, best discord bot list">
+    <meta name="language"  content="EN">
+    <meta name="copyright" content="@2020 discordlabs.org">
 
-	<!-- Custom stlylesheet -->
-	<link type="text/css" rel="stylesheet" href="/404/style.css" />
+    <meta name="description" content="Creating the next generation of Discord sites and tools.">
 
-</head>
+    <meta name="twitter:card" value="summary">
+    <meta name="twitter:title" content="Page Not Found | Discord Labs">
+    <meta name="twitter:description" content="Creating the next generation of Discord sites and tools.">
 
-<body>
+    <meta property="og:title" content="Page Not Found | Discord Labs" />
+    <meta property="og:url" content="https://discordlabs.org" />
+    <meta property="og:description" content="Creating the next generation of Discord sites and tools."> 
+    <meta property="og:image" content="https://cdn.discordlabs.org/logo200.png" />
+    <meta property="og:site_name" value="Discord Labs">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" />
+    <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+<script data-ad-client="ca-pub-4699410928556406" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-	<div id="notfound">
-		<div class="notfound">
-			<div class="notfound-404">
-				<h1 id="404">404</h1>
-				<h2>Page not found</h2>
-			</div>
-			<a href="https://discordlabs.org">Homepage</a>
-		</div>
+    <style>
+     * {
+         -moz-box-sizing:border-box;
+         -webkit-box-sizing:border-box;
+         box-sizing:border-box;
+     }
+
+     html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+     abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+     small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+     fieldset, form, label, legend, caption, article, aside, canvas, details, figcaption, figure,  footer, header, hgroup,
+     menu, nav, section, summary, time, mark, audio, video {
+         margin:0;
+         padding:0;
+         border:0;
+         outline:0;
+         vertical-align:baseline;
+         background:transparent;
+     }
+
+     article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+         display: block;
+     }
+
+     html {
+         font-size: 16px;
+         line-height: 24px;
+         width:100%;
+         height:100%;
+         -webkit-text-size-adjust: 100%;
+         -ms-text-size-adjust: 100%;
+         overflow-y:scroll;
+         overflow-x:hidden;
+     }
+
+     img {
+         vertical-align:middle;
+         max-width: 100%;
+         height: auto;
+         border: 0;
+         -ms-interpolation-mode: bicubic;
+     }
+
+     body {
+         min-height:100%;
+         -webkit-font-smoothing: subpixel-antialiased;
+     }
+
+     .clearfix {
+	       clear:both;
+	       zoom: 1;
+     }
+     .clearfix:before, .clearfix:after {
+         content: "\0020";
+         display: block;
+         height: 0;
+         visibility: hidden;
+     }
+     .clearfix:after {
+         clear: both;
+     }
+    </style>
+    <style>
+  .plain.error-page-wrapper {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color:#6355bc;
+    padding:0 5%;
+    position:relative;
+  }
+
+  .plain.error-page-wrapper .content-container {
+    -webkit-transition: left .5s ease-out, opacity .5s ease-out;
+    -moz-transition: left .5s ease-out, opacity .5s ease-out;
+    -ms-transition: left .5s ease-out, opacity .5s ease-out;
+    -o-transition: left .5s ease-out, opacity .5s ease-out;
+    transition: left .5s ease-out, opacity .5s ease-out;
+    max-width:400px;
+    position:relative;
+    left:-30px;
+    opacity:0;
+  }
+
+  .plain.error-page-wrapper .content-container.in {
+    left: 0px;
+    opacity:1;
+  }
+
+  .plain.error-page-wrapper .head-line {
+    transition: color .2s linear;
+    font-size:48px;
+    line-height:60px;
+    color:rgba(255,255,255,.2);
+    letter-spacing: -1px;
+    margin-bottom: 5px;
+  }
+  .plain.error-page-wrapper .subheader {
+    transition: color .2s linear;
+    font-size:36px;
+    line-height:46px;
+    color:#fff;
+  }
+  .plain.error-page-wrapper hr {
+    height:1px;
+    background-color: rgba(255,255,255,.2);
+    border:none;
+    width:250px;
+    margin:35px 0;
+  }
+  .plain.error-page-wrapper .context {
+    transition: color .2s linear;
+    font-size:18px;
+    line-height:27px;
+    color:#fff;
+  }
+  .plain.error-page-wrapper .context p {
+    margin:0;
+  }
+  .plain.error-page-wrapper .context p:nth-child(n+2) {
+    margin-top:12px;
+  }
+  .plain.error-page-wrapper .buttons-container {
+    margin-top: 45px;
+    overflow: hidden;
+  }
+        
+        
+        
+        
+  .plain.error-page-wrapper .buttons-container a {
+    transition: text-indent .2s linear, color .5s linear, border-color .5s linear;
+    font-size:16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#fff;
+    border:2px solid white;
+    border-radius: 99px;
+    padding:9px 0 10px;
+    width:180px;
+    overflow: hidden;
+    text-align:center;
+    display: inline-block;
+    position:relative;
+  }
+
+
+ .plain.error-page-wrapper .buttons-container a:hover {
+    background-color:rgba(255,255,255,.1);
+    text-indent: 17px;
+  }
+
+ .plain.error-page-wrapper .buttons-container a:first-child {
+    margin-right:25px;
+  }
+
+ .plain.error-page-wrapper .buttons-container .fa {
+    transition:left .2s ease-out;
+    position: absolute;
+    left:-50px;
+  }
+
+ .plain.error-page-wrapper .buttons-container .fa-warning {
+    font-size:16px;
+    top:14px;
+  }
+
+ .plain.error-page-wrapper .buttons-container a:hover .fa-warning {
+    left:0px;
+  }
+
+ .plain.error-page-wrapper .buttons-container .fa-power-off {
+    font-size:16px;
+    top:14px;
+  }
+
+ .plain.error-page-wrapper .buttons-container a:hover .fa-power-off {
+    left:0px;
+  }
+
+ .plain.error-page-wrapper .buttons-container .fa-home {
+    font-size:18px;
+    top:12px;
+  }
+
+ .plain.error-page-wrapper .buttons-container a:hover .fa-home {
+    left:15px;
+  }
+
+  @media screen and (max-width: 500px) {
+   .plain.error-page-wrapper .text-container {
+      bottom:20px;
+      left:20px;
+      right:20px;
+    }
+   .plain.error-page-wrapper .text-container .header {
+      font-size:32px;
+      line-height:40px;
+    }
+   .plain.error-page-wrapper .text-container .context {
+      font-size:15px;
+      line-height: 22px;
+    }
+   .plain.error-page-wrapper .buttons-container {
+    margin-top: 20px;
+  }
+
+   .plain.error-page-wrapper .buttons-container a {
+      font-size:14px;
+      padding:8px 0 9px;
+      width:45%;
+      float:left;
+      margin:0;
+    }
+   .plain.error-page-wrapper .buttons-container a + a {
+      float:right;
+    }
+   .plain.error-page-wrapper .buttons-container a:hover {
+      text-indent: 0px;
+    }
+   .plain.error-page-wrapper .buttons-container .fa {
+      display:none;
+    }
+  }
+</style>
+
+    <style>
+
+    .background-color {
+      background-color: rgba(26, 29, 34, 1) !important;
+    }
+
+
+    .primary-text-color {
+      color: #FFFFFF !important;
+    }
+
+    .secondary-text-color {
+      color: rgba(0, 128, 240, 1) !important;
+    }
+
+    .sign-text-color {
+      color: #FFBA00 !important;
+    }
+
+    .sign-frame-color {
+      color: #343C3F;
+    }
+
+    .pane {
+      background-color: #FFFFFF !important;
+    }
+
+    .border-button {
+      color: rgba(0, 128, 240, 1) !important;
+      border-color: rgba(0, 128, 240, 1) !important;
+    }
+    .button {
+      background-color: rgba(0, 128, 240, 1) !important;
+      color: #FFFFFF !important;
+    }
+
+    .shadow {
+      box-shadow: 0 0 60px #000000;
+    }
+
+</style>
+
+  </head>
+  <body class="plain error-page-wrapper background-color background-image">
+    <div class="content-container">
+	<div class="head-line secondary-text-color">
+		404
 	</div>
+	<div class="subheader primary-text-color">
+		Oops, the page you're <br>
+		looking for does not exist.
+	</div>
+	<hr>
+	<div class="clearfix"></div>
+	<div class="context primary-text-color">
+		<!-- doesn't use context_content because it's ALWAYS the same thing -->
+    <p>
+      You may want to head back to the homepage.<br />
+      If you think something is broken, report an issue.
+    </p>
+	</div>
+	<div class="buttons-container">
+		<a class="border-button" href="/" ><span class="fa fa-home"></span> Homepage</a>
+		<a class="border-button" href="https://discord.gg/rmPNvNJ" target="_blank"><span class="fa fa-warning"></span> Report Issue</a>
+	</div>
+</div>
 
 
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+    <script>
+     function ErrorPage(container, pageType, templateName) {
+       this.$container = $(container);
+       this.$contentContainer = this.$container.find(templateName == 'sign' ? '.sign-container' : '.content-container');
+       this.pageType = pageType;
+       this.templateName = templateName;
+     }
 
+     ErrorPage.prototype.centerContent = function () {
+       var containerHeight = this.$container.outerHeight() || null
+         , contentContainerHeight = this.$contentContainer.outerHeight() || null
+         , top = (containerHeight - contentContainerHeight) / 2
+         , offset = this.templateName == 'sign' ? -100 : 0;
+
+       this.$contentContainer.css('top', top + offset);
+     };
+
+     ErrorPage.prototype.initialize = function () {
+       var self = this;
+
+       this.centerContent();
+       this.$container.on('resize', function (e) {
+         e.preventDefault();
+         e.stopPropagation();
+         self.centerContent();
+       });
+
+       // fades in content on the plain template
+       if (this.templateName == 'plain') {
+         window.setTimeout(function () {
+           self.$contentContainer.addClass('in');
+         }, 500);
+       }
+
+       // swings sign in on the sign template
+       if (this.templateName == 'sign') {
+         $('.sign-container').animate({textIndent : 0}, {
+           step : function (now) {
+             $(this).css({
+               transform : 'rotate(' + now + 'deg)',
+               'transform-origin' : 'top center'
+             });
+           },
+           duration : 1000,
+           easing : 'easeOutBounce'
+         });
+       }
+     };
+
+
+     ErrorPage.prototype.createTimeRangeTag = function(start, end) {
+       return (
+         '<time utime=' + start + ' simple_format="MMM DD, YYYY HH:mm">' + start + '</time> - <time utime=' + end + ' simple_format="MMM DD, YYYY HH:mm">' + end + '</time>.'
+       )
+     };
+
+
+     ErrorPage.prototype.handleStatusFetchSuccess = function (pageType, data) {
+       if (pageType == '503') {
+         $('#replace-with-fetched-data').html(data.status.description);
+       } else {
+         if (!!data.scheduled_maintenances.length) {
+           var maint = data.scheduled_maintenances[0];
+           $('#replace-with-fetched-data').html(this.createTimeRangeTag(maint.scheduled_for, maint.scheduled_until));
+           $.fn.localizeTime();
+         }
+         else {
+           $('#replace-with-fetched-data').html('<em>(there are no active scheduled maintenances)</em>');
+         }
+       }
+     };
+
+
+     ErrorPage.prototype.handleStatusFetchFail = function (pageType) {
+       $('#replace-with-fetched-data').html('<em>(enter a valid Statuspage url)</em>');
+     };
+
+
+     ErrorPage.prototype.fetchStatus = function (pageUrl, pageType) {
+       //console.log('in app.js fetch');
+       if (!pageUrl || !pageType || pageType == '404') return;
+
+       var url = ''
+         , self = this;
+
+       if (pageType == '503') {
+         url = pageUrl + '/api/v2/status.json';
+       }
+       else {
+         url = pageUrl + '/api/v2/scheduled-maintenances/active.json';
+       }
+
+       $.ajax({
+         type : "GET",
+         url : url,
+       }).done(function (data, status) {
+         //console.log('success');
+         self.handleStatusFetchSuccess(pageType, data);
+       }).fail(function (xhr, msg) {
+         //console.log('fail');
+         self.handleStatusFetchFail(pageType);
+       });
+
+     };
+     var ep = new ErrorPage('body', "404", "plain");
+     ep.initialize();
+
+     // hack to make sure content stays centered >_<
+     $(window).on('resize', function() {
+       $('body').trigger('resize')
+     });
+
+    </script>
+
+    
+
+  </body>
 </html>
