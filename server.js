@@ -44,7 +44,9 @@ app.get("/talle", function (req, res) {
 app.get("/beautify", function (req, res) {
   res.redirect("/talle");
 });
-
+app.get("/aim", function (req, res) {
+  res.redirect("//bots.discordlabs.org/bot/aimod?utm_source=discordlabs");
+});
 
 app.get("/bot/:id", function (req, res) {
   res.redirect("//bots.discordlabs.org/bot/" + req.params.id);
